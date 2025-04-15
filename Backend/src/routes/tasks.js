@@ -49,7 +49,33 @@ router.get('/post', async (req,res)=>{
 })
 
 router.put('/post/:id',async (req,res)=>{
-    const task = 
-})
+            const id = req.params.id;
+            const body = req.body;
+
+           const task = await prisma.task.update({
+                where :{
+                id : parseInt(id)
+                 },
+                data : {
+                 title : body.title,
+                 description : body.description,
+                 dueDate : body.dueDate
+                 }
+                });
+
+           res.json(task);
+          })
+
+
+  router.delete('/post/:id',async (req,res)=>{
+            const id = req.params.id;
+
+            const task = await prisma.task.delete({
+                where :{
+                id : parseInt(id)
+                 }
+                });
+                res.status(204).send(); 
+          })
 
 module.exports = router;
