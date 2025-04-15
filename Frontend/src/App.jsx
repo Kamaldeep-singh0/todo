@@ -1,11 +1,13 @@
+import Landing from "./pages/Landing"
+import Mainpage from "./pages/Mainpage"
 
 function App() {
  
 
   return (
     
-      <div className='text-6xl'>
-        hello
+      <div >
+      <Landing/>
       </div>
     
   )
