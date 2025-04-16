@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const prisma = new PrismaClient();
 
 router.use(async(req, res, next)=>{
-    const auth = req.header("authorization") || "";
+    const auth = req.header("authorization");
 
     const user =  jwt.verify(auth,process.env.JWT_SECRET);
 
