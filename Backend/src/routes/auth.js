@@ -33,7 +33,7 @@ router.post('/login',async (req,res)=>{
 })
 
 router.get('/',(req,res)=>{
-    res.json("hello")
+    res.json("hello how are you ")
 })
 
 module.exports = router;
