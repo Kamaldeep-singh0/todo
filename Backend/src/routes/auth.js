@@ -32,8 +32,10 @@ router.post('/login',async (req,res)=>{
     res.json(token);
 })
 
+
+
 router.get('/',(req,res)=>{
-    res.json("hello how are you ")
+    res.json("helloo   fgfvfv")
 })
 
 module.exports = router;
