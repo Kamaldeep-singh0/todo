@@ -35,7 +35,7 @@ router.post('/login',async (req,res)=>{
 
 
 router.get('/',(req,res)=>{
-    res.json("helloo   fgfvfv")
+    res.json("helloo   fgfvfv hyuhjh")
 })
 
 module.exports = router;

@@ -15,7 +15,7 @@ app.use('/api/v1',taskRoutes);
 
 app.get('/',(req,res)=>{
     console.log("Listening on port 3000");
-    res.json("hello how are you ")
+    res.json("hello how are you areeeee")
 })
 
 app.listen(port);
